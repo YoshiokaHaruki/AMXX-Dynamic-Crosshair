@@ -12,7 +12,7 @@ public plugin_init( )
 {
 	register_plugin( PluginName, PluginVersion, PluginAuthor );
 
-	static const WeaponEntNames[ ][ ] = { 
+	new const WeaponEntNames[ ][ ] = { 
 		"weapon_p228", "weapon_aug", "weapon_elite", "weapon_fiveseven", "weapon_ump45", 
 		"weapon_galil", "weapon_famas", "weapon_usp", "weapon_glock18", "weapon_mp5navy", 
 		"weapon_m249", "weapon_m4a1", "weapon_tmp", "weapon_deagle", "weapon_sg552", 
