@@ -8,6 +8,10 @@ ReHLDS, ReGameDLL, Metamod-r (or Metamod-P), AMX Mod X, ReAPI.
 ### Usage
 This plugin will only work with custom weapons, so that the sight with default weapons does not get interrupted.
 
+When installing the plugin, the sight will automatically expand when shots are fired.
+
+### Usage without plugin
+
 In order not to use the plugin, but to use a dynamic sight anyway, it is enough to add include
 ```Pawn
 #include <api_dynamic_crosshair>
