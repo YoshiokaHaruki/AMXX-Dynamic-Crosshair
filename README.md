@@ -1,5 +1,5 @@
 # AMXX API Dynamic Crosshair
-Added Dynamic Crosshair for Custom Weapons for Counter-Strike 1.6 (Based on ReAPI)
+Dynamic Crosshair for Custom Weapons for Counter-Strike 1.6 (Based on ReAPI)
 
 The scope will not expand on weapons such as:
 * *weapon_mac10*
