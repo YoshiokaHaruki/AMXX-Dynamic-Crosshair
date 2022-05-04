@@ -12,7 +12,7 @@ public plugin_init( )
 {
 	register_plugin( PluginName, PluginVersion, PluginAuthor );
 
-	new const WeaponEntNames[ ][ ] = { 
+	new const aWeaponEntNames[ ][ ] = { 
 		"weapon_p228", "weapon_aug", "weapon_elite", "weapon_fiveseven", "weapon_ump45", 
 		"weapon_galil", "weapon_famas", "weapon_usp", "weapon_glock18", "weapon_mp5navy", 
 		"weapon_m249", "weapon_m4a1", "weapon_tmp", "weapon_deagle", "weapon_sg552", 
@@ -20,10 +20,10 @@ public plugin_init( )
 	};
 
 	/* -> HamSandwich -> */
-	for ( new i; i < sizeof WeaponEntNames; i++ )
+	for ( new i, iSize = sizeof aWeaponEntNames; i < iSize; i++ )
 	{
-		RegisterHam( Ham_Item_PostFrame, WeaponEntNames[ i ], "Ham_CBasePlayerWeapon__PostFrame_Pre", false );
-		RegisterHam( Ham_Weapon_PrimaryAttack, WeaponEntNames[ i ], "Ham_CBasePlayerWeapon__PrimaryAttack_Post", true );
+		RegisterHam( Ham_Item_PostFrame, aWeaponEntNames[ i ], "Ham_CBasePlayerWeapon__PostFrame_Pre", false );
+		RegisterHam( Ham_Weapon_PrimaryAttack, aWeaponEntNames[ i ], "Ham_CBasePlayerWeapon__PrimaryAttack_Post", true );
 	}
 }
 
