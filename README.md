@@ -1,6 +1,13 @@
 # AMXX API Dynamic Crosshair
 Added Dynamic Crosshair for Custom Weapons for Counter-Strike 1.6 (Based on ReAPI)
 
+The scope will not expand on weapons such as:
+* *weapon_mac10*
+* *weapon_xm1014*
+* *weapon_m3*
+
+It will also not work if the player has a hidden sight or FOV (Field of view) less than 55 (Zoom from *weapon_aug*)
+
 ### Requirements
 ReHLDS, ReGameDLL, Metamod-r (or Metamod-P), AMX Mod X, ReAPI.
 * Tip: Recommend using the latest versions.
