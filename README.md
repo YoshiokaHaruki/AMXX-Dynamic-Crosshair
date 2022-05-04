@@ -35,3 +35,5 @@ UTIL_IncreaseCrosshair( pPlayer, pItem );
 // Reset crosshair
 UTIL_ResetCrosshair( pPlayer, pItem );
 ```
+
+You can see how to use it in full here: https://github.com/YoshiokaHaruki/AMXX-Hunter-Killer-X-7
