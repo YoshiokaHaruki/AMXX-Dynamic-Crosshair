@@ -1,27 +1,13 @@
 # AMXX Dynamic Crosshair
 Dynamic Crosshair for Custom Weapons for Counter-Strike 1.6 (Based on ReAPI)
 
-**Attention! With this plugin, plugins like *Unlimited Clip* will not work.**
-
-The scope will not expand on weapons such as:
-* *weapon_mac10*
-* *weapon_xm1014*
-* *weapon_m3*
-
-It will also not work if the player has a hidden sight or FOV (Field of view) less than 55 (Zoom from *weapon_aug*)
-
 ### Requirements
-ReHLDS, ReGameDLL, Metamod-r (or Metamod-P), AMX Mod X, ReAPI.
-* Tip: Recommend using the latest versions.
+* ReHLDS + ReGameDLL + ReAPI
+* AMX Mod X ≥ 1.9.0
+* * Tip: Recommend using the latest versions.
 
 ### Usage
-This plugin will only work with custom weapons, so that the sight with default weapons does not get interrupted.
-
-When installing the plugin, the sight will automatically expand when shots are fired.
-
-### Usage without plugin
-
-In order not to use the plugin, but to use a dynamic sight anyway, it is enough to add include
+* Add include on your custom weapon plugin
 ```Pawn
 #include <api_dynamic_crosshair>
 ```
