@@ -46,7 +46,7 @@ stock UTIL_IncreaseCrosshair( const pPlayer, const pItem, iFakePosition = 13, iF
 	UTIL_WeaponList( MSG_ONE, pPlayer, pItem, .iPosition = iFakePosition, .iWeaponId = iFakeWeaponId );
 	UTIL_CurWeapon( MSG_ONE, pPlayer, true, iFakeWeaponId, get_member( pItem, m_Weapon_iClip ) );
 
-	set_member( pItem, m_Weapon_flNextReload, get_gametime( ) + 0.04 );
+	set_member( pItem, m_Weapon_flNextReload, get_gametime( ) + 0.08 );
 }
 
 /**
@@ -57,7 +57,7 @@ stock UTIL_IncreaseCrosshair( const pPlayer, const pItem, iFakePosition = 13, iF
  */
 stock UTIL_ResetCrosshair( const pPlayer, const pItem ) 
 {
-	if ( get_member( pItem, m_Weapon_flNextReload ) && get_member( pItem, m_Weapon_flNextReload ) <= get_gametime( ) ) 
+	if ( 0.0 < Float: get_member( pItem, m_Weapon_flNextReload ) <= get_gametime( ) ) 
 	{
 		UTIL_CurWeapon( MSG_ONE, pPlayer, true, get_member( pItem, m_iId ), get_member( pItem, m_Weapon_iClip ) );
 		set_member( pItem, m_Weapon_flNextReload, 0.0 );
